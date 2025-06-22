@@ -1,1 +1,64 @@
-<!-- Bosh sahifa tarkibini shu yerga qo'shish mumkin -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kurbanbaeva Blog | Til tanlang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #0d6efd;
+      color: #fff;
+      padding: 1.5rem;
+    }
+    .language-switcher {
+      margin-top: 4rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #0d6efd;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kurbanbaeva K. blogi</h1>
+    <p>Iltimos, tilni tanlang</p>
+  </header>
+
+  <div class="language-switcher">
+    <h3>🌍 Tilni tanlang / Select language / Тілді таңдаңыз</h3>
+    <button onclick="changeLang('uz')">🇺🇿 O‘zbek</button>
+    <button onclick="changeLang('kk')">🇰🇿 Qaraqalpaq</button>
+    <button onclick="changeLang('ru')">🇷🇺 Русский</button>
+  </div>
+
+  <script>
+    function changeLang(lang) {
+      if (lang === 'uz') {
+        window.location.href = 'index_uz.html';
+      } else if (lang === 'kk') {
+        window.location.href = 'index_kk.html';
+      } else if (lang === 'ru') {
+        window.location.href = 'index_ru.html';
+      }
+    }
+  </script>
+</body>
+</html>
